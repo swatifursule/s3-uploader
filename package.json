@@ -1,0 +1,20 @@
+{
+  "name": "my-uploader",
+  "version": "1.0.0",
+  "description": "Uploading to S3, chunk upload",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Swati Fursule <SwatiFursule@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "2.327.0",
+    "bluebird": "3.5.2",
+    "express": "4.16.3",
+    "file-type": "9.0.0",
+    "fs": "0.0.1-security",
+    "multiparty": "4.2.1"
+  }
+}
