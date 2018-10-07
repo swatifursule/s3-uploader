@@ -47,8 +47,9 @@ app.post('/upload-file', (request, response) => {
             const buffer = fs.readFileSync(path);
             const type = fileType(buffer);
             const timestamp = Date.now().toString();
-            const fileName = `bucketFolder/${timestamp}-lg`;
+            const fileName = `test-uploads/${timestamp}-lg`;
             const data = await uploadFile(buffer, fileName, type);
+	    console.log("data after sending " +data);
             return response.status(200).send(data);
         }catch(err){
             return response.status(400).send(err);
